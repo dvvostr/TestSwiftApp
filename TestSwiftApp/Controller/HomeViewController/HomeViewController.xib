@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TestSwiftApp" customModuleProvider="target">
+            <connections>
+                <outlet property="productBestSalesView" destination="7RT-RD-2Lt" id="cKN-MO-UYa"/>
+                <outlet property="productCategoryView" destination="D6S-91-3Ro" id="NHA-L7-0wR"/>
+                <outlet property="productHotSalesView" destination="7tF-C8-bLH" id="WDq-5h-B1R"/>
+                <outlet property="productNavBarView" destination="gsY-8g-PDK" id="Pw6-s5-cCT"/>
+                <outlet property="productSearchView" destination="Dje-va-Yez" id="nIH-aL-Ltf"/>
+                <outlet property="scrollContainerView" destination="wG6-lQ-LRQ" id="y7z-cn-hNE"/>
+                <outlet property="scrollView" destination="OOt-3I-Rqp" id="stX-0z-1WK"/>
+                <outlet property="scrollViewHeigthConstraint" destination="vLL-Yq-2Zw" id="Udw-YW-bo4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1047"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOt-3I-Rqp">
+                    <rect key="frame" x="0.0" y="48" width="414" height="897"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG6-lQ-LRQ">
+                            <rect key="frame" x="0.0" y="12" width="414" height="1000"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6S-91-3Ro" customClass="UIX3ProductCategorySelectView" customModule="TestSwiftApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="BP7-vA-opM"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dje-va-Yez" customClass="UIX3ProductSearchView" customModule="TestSwiftApp" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="168" width="350" height="38"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="deL-nM-K5Z"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tF-C8-bLH" customClass="UIX3ProductHotSalesView" customModule="TestSwiftApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="228" width="414" height="216"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="216" id="wYI-j1-De4"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RT-RD-2Lt" customClass="UIX3ProductBestSalesView" customModule="TestSwiftApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="466" width="414" height="534"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="7RT-RD-2Lt" firstAttribute="leading" secondItem="wG6-lQ-LRQ" secondAttribute="leading" id="7Jv-ek-42z"/>
+                                <constraint firstItem="7tF-C8-bLH" firstAttribute="top" secondItem="Dje-va-Yez" secondAttribute="bottom" constant="22" id="BUE-Nz-HjV"/>
+                                <constraint firstAttribute="trailing" secondItem="D6S-91-3Ro" secondAttribute="trailing" id="Cu8-qX-GeN"/>
+                                <constraint firstItem="Dje-va-Yez" firstAttribute="top" secondItem="D6S-91-3Ro" secondAttribute="bottom" constant="28" id="Nvk-D5-tuy"/>
+                                <constraint firstAttribute="trailing" secondItem="7tF-C8-bLH" secondAttribute="trailing" id="UMy-sy-d7f"/>
+                                <constraint firstAttribute="trailing" secondItem="Dje-va-Yez" secondAttribute="trailing" constant="32" id="WN8-mA-6eX"/>
+                                <constraint firstItem="7RT-RD-2Lt" firstAttribute="top" secondItem="7tF-C8-bLH" secondAttribute="bottom" constant="22" id="Xri-5X-oP3"/>
+                                <constraint firstItem="Dje-va-Yez" firstAttribute="leading" secondItem="wG6-lQ-LRQ" secondAttribute="leading" constant="32" id="aaB-39-gat"/>
+                                <constraint firstItem="7tF-C8-bLH" firstAttribute="leading" secondItem="wG6-lQ-LRQ" secondAttribute="leading" id="bVN-fD-SEW"/>
+                                <constraint firstAttribute="trailing" secondItem="7RT-RD-2Lt" secondAttribute="trailing" id="fYc-oz-FWh"/>
+                                <constraint firstItem="D6S-91-3Ro" firstAttribute="leading" secondItem="wG6-lQ-LRQ" secondAttribute="leading" id="fcl-5Z-au3"/>
+                                <constraint firstItem="D6S-91-3Ro" firstAttribute="top" secondItem="wG6-lQ-LRQ" secondAttribute="top" id="ioi-Gh-iQy"/>
+                                <constraint firstAttribute="bottom" secondItem="7RT-RD-2Lt" secondAttribute="bottom" id="muj-Yg-twc"/>
+                                <constraint firstAttribute="height" constant="1000" id="vLL-Yq-2Zw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wG6-lQ-LRQ" secondAttribute="trailing" id="MpZ-Wg-MSa"/>
+                        <constraint firstAttribute="bottom" secondItem="wG6-lQ-LRQ" secondAttribute="bottom" id="cCe-G1-V2p"/>
+                        <constraint firstItem="wG6-lQ-LRQ" firstAttribute="width" secondItem="OOt-3I-Rqp" secondAttribute="width" id="evJ-pJ-JZo"/>
+                        <constraint firstItem="wG6-lQ-LRQ" firstAttribute="leading" secondItem="OOt-3I-Rqp" secondAttribute="leading" id="o2p-1e-C4h"/>
+                        <constraint firstItem="wG6-lQ-LRQ" firstAttribute="top" secondItem="OOt-3I-Rqp" secondAttribute="top" constant="12" id="qQy-AS-euI"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="zvx-jy-9CZ"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="jcA-3a-OUE"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-8g-PDK" customClass="UIX3ProductNavBarView" customModule="TestSwiftApp" customModuleProvider="target">
+                    <rect key="frame" x="4" y="945" width="406" height="68"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="vQs-vP-29k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OOt-3I-Rqp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6xs-6B-4s8"/>
+                <constraint firstItem="OOt-3I-Rqp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8AJ-rt-lDJ"/>
+                <constraint firstItem="OOt-3I-Rqp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y5t-05-d3D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gsY-8g-PDK" secondAttribute="trailing" constant="4" id="k0v-EA-WOY"/>
+                <constraint firstItem="OOt-3I-Rqp" firstAttribute="bottom" secondItem="gsY-8g-PDK" secondAttribute="top" id="l8Q-5p-uaD"/>
+                <constraint firstItem="gsY-8g-PDK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="oJL-Aq-eqe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gsY-8g-PDK" secondAttribute="bottom" id="uh8-W3-8f4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.43478260869566" y="39.174107142857139"/>
+        </view>
+    </objects>
+</document>

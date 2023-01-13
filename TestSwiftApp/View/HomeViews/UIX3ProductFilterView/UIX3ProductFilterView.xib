@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIX3ProductFilterView" customModule="TestSwiftApp" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCancel" destination="OI7-K2-cbX" id="7ml-Zg-Ly9"/>
+                <outlet property="buttonDone" destination="u3B-DI-vXw" id="560-qH-ASi"/>
+                <outlet property="fieldValue1" destination="Flm-Jd-xeu" id="C1A-Lu-vDG"/>
+                <outlet property="fieldValue2" destination="MMM-yb-afh" id="oN9-fe-JA2"/>
+                <outlet property="fieldValue3" destination="KbR-5b-FVB" id="W0L-bD-UwU"/>
+                <outlet property="labelCaption" destination="fjt-YG-oWf" id="U2N-5d-dBk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="312"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1u-Wq-HvD">
+                    <rect key="frame" x="44" y="24" width="458" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-K2-cbX">
+                            <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                            <state key="normal" title=""/>
+                            <buttonConfiguration key="configuration" style="plain" image="iconCancel">
+                                <backgroundConfiguration key="background" cornerRadius="6">
+                                    <color key="backgroundColor" name="colorBlue"/>
+                                </backgroundConfiguration>
+                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3B-DI-vXw">
+                            <rect key="frame" x="372" y="0.0" width="86" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="86" id="kRR-1l-pfv"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Done">
+                                <backgroundConfiguration key="background" cornerRadius="6">
+                                    <color key="backgroundColor" name="colorOrange"/>
+                                </backgroundConfiguration>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjt-YG-oWf">
+                            <rect key="frame" x="46" y="8.6666666666666643" width="318" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="OI7-K2-cbX" firstAttribute="width" secondItem="o1u-Wq-HvD" secondAttribute="height" id="4VI-HS-ybJ"/>
+                        <constraint firstItem="fjt-YG-oWf" firstAttribute="leading" secondItem="OI7-K2-cbX" secondAttribute="trailing" constant="8" id="JLf-zU-WFi"/>
+                        <constraint firstItem="u3B-DI-vXw" firstAttribute="top" secondItem="o1u-Wq-HvD" secondAttribute="top" id="QCh-oI-yQ8"/>
+                        <constraint firstAttribute="bottom" secondItem="u3B-DI-vXw" secondAttribute="bottom" id="QXq-hJ-fUA"/>
+                        <constraint firstAttribute="height" constant="38" id="Uo9-9Y-oEN"/>
+                        <constraint firstItem="fjt-YG-oWf" firstAttribute="centerY" secondItem="o1u-Wq-HvD" secondAttribute="centerY" id="bQr-nS-zpF"/>
+                        <constraint firstItem="OI7-K2-cbX" firstAttribute="top" secondItem="o1u-Wq-HvD" secondAttribute="top" id="qvf-wa-ya9"/>
+                        <constraint firstAttribute="bottom" secondItem="OI7-K2-cbX" secondAttribute="bottom" id="rH6-o7-KDb"/>
+                        <constraint firstItem="OI7-K2-cbX" firstAttribute="leading" secondItem="o1u-Wq-HvD" secondAttribute="leading" id="tam-EP-cTW"/>
+                        <constraint firstItem="u3B-DI-vXw" firstAttribute="leading" secondItem="fjt-YG-oWf" secondAttribute="trailing" constant="8" id="vSt-o2-qq4"/>
+                        <constraint firstAttribute="trailing" secondItem="u3B-DI-vXw" secondAttribute="trailing" id="wQt-hl-efK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flm-Jd-xeu" userLabel="ValueView1" customClass="UIX3ProductFilterFieldView" customModule="TestSwiftApp" customModuleProvider="target">
+                    <rect key="frame" x="44" y="82" width="446" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="UkF-Fe-SbZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMM-yb-afh" userLabel="ValueView2" customClass="UIX3ProductFilterFieldView" customModule="TestSwiftApp" customModuleProvider="target">
+                    <rect key="frame" x="44" y="162" width="446" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="iyQ-S2-IQL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbR-5b-FVB" userLabel="ValueView3" customClass="UIX3ProductFilterFieldView" customModule="TestSwiftApp" customModuleProvider="target">
+                    <rect key="frame" x="44" y="244" width="446" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="4O1-wQ-BYf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MMM-yb-afh" firstAttribute="leading" secondItem="Flm-Jd-xeu" secondAttribute="leading" id="0Nv-JD-k61"/>
+                <constraint firstItem="KbR-5b-FVB" firstAttribute="trailing" secondItem="MMM-yb-afh" secondAttribute="trailing" id="2TK-nO-cnf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o1u-Wq-HvD" secondAttribute="trailing" constant="20" id="4Lg-5Z-ajl"/>
+                <constraint firstItem="o1u-Wq-HvD" firstAttribute="trailing" secondItem="Flm-Jd-xeu" secondAttribute="trailing" constant="12" id="5wY-D0-tQC"/>
+                <constraint firstItem="MMM-yb-afh" firstAttribute="top" secondItem="Flm-Jd-xeu" secondAttribute="bottom" constant="12" id="AzN-Lu-JFj"/>
+                <constraint firstItem="o1u-Wq-HvD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="kUu-43-saM"/>
+                <constraint firstItem="o1u-Wq-HvD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="44" id="mlL-8c-aKG"/>
+                <constraint firstItem="Flm-Jd-xeu" firstAttribute="leading" secondItem="o1u-Wq-HvD" secondAttribute="leading" id="mpk-8T-oNo"/>
+                <constraint firstItem="KbR-5b-FVB" firstAttribute="top" secondItem="MMM-yb-afh" secondAttribute="bottom" constant="14" id="nQd-37-shW"/>
+                <constraint firstItem="KbR-5b-FVB" firstAttribute="leading" secondItem="MMM-yb-afh" secondAttribute="leading" id="r9d-wE-uP7"/>
+                <constraint firstItem="Flm-Jd-xeu" firstAttribute="top" secondItem="o1u-Wq-HvD" secondAttribute="bottom" constant="20" id="xtP-Wv-npV"/>
+                <constraint firstItem="MMM-yb-afh" firstAttribute="trailing" secondItem="Flm-Jd-xeu" secondAttribute="trailing" id="zKu-nB-FXg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="229.00763358778624" y="-199.29577464788733"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconCancel" width="11" height="11"/>
+        <namedColor name="colorBlue">
+            <color red="0.0039215686274509803" green="0.0" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorOrange">
+            <color red="1" green="0.43137254901960786" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

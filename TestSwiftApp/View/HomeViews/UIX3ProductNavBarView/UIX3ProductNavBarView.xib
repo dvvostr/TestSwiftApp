@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIX3ProductNavBarView">
+            <connections>
+                <outlet property="buttonCard" destination="UKC-7T-JkC" id="R5O-5u-Qu3"/>
+                <outlet property="buttonExplorer" destination="5Tk-yf-YT9" id="zje-4f-hWr"/>
+                <outlet property="buttonFavotite" destination="efN-rR-gg7" id="obC-n6-kTn"/>
+                <outlet property="buttonUser" destination="UFA-95-D29" id="5Tw-Ij-0IQ"/>
+                <outlet property="constraintLeading" destination="gFx-OT-JWa" id="OP8-nx-0eW"/>
+                <outlet property="constraintTraining" destination="pXp-SE-2dY" id="qXC-Yr-Ade"/>
+                <outlet property="containerView" destination="TtQ-Te-Jrb" id="pvM-vK-9Bu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtQ-Te-Jrb">
+                    <rect key="frame" x="0.0" y="0.0" width="502" height="167"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Tk-yf-YT9" userLabel="ButtonExplorer">
+                            <rect key="frame" x="24" y="62.666666666666657" width="288" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="3e1-w1-ZeD"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                            <state key="normal" title="Button" image="iconCircle"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-7T-JkC" userLabel="ButtonCard">
+                            <rect key="frame" x="320" y="67.666666666666671" width="42" height="32"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="iconCard"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efN-rR-gg7" userLabel="ButtonFavorite">
+                            <rect key="frame" x="378" y="68" width="42" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="iconFavoriteOff"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-95-D29" userLabel="ButtonUser">
+                            <rect key="frame" x="436" y="67.666666666666671" width="42" height="32"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="iconUser"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="colorBlue"/>
+                    <constraints>
+                        <constraint firstItem="UFA-95-D29" firstAttribute="leading" secondItem="efN-rR-gg7" secondAttribute="trailing" constant="16" id="23r-Aq-8Gl"/>
+                        <constraint firstItem="UKC-7T-JkC" firstAttribute="centerY" secondItem="efN-rR-gg7" secondAttribute="centerY" id="9TM-J2-PCl"/>
+                        <constraint firstItem="efN-rR-gg7" firstAttribute="width" secondItem="5Tk-yf-YT9" secondAttribute="height" id="Bns-SO-7Zw"/>
+                        <constraint firstItem="UFA-95-D29" firstAttribute="height" secondItem="5Tk-yf-YT9" secondAttribute="height" multiplier="0.761905" id="Kbl-8s-q43"/>
+                        <constraint firstItem="UKC-7T-JkC" firstAttribute="width" secondItem="5Tk-yf-YT9" secondAttribute="height" id="MXW-Yf-ZSN"/>
+                        <constraint firstItem="UKC-7T-JkC" firstAttribute="height" secondItem="5Tk-yf-YT9" secondAttribute="height" multiplier="0.761905" id="Mjl-TB-1YS"/>
+                        <constraint firstItem="UFA-95-D29" firstAttribute="width" secondItem="5Tk-yf-YT9" secondAttribute="height" id="UPc-9z-AO1"/>
+                        <constraint firstItem="efN-rR-gg7" firstAttribute="height" secondItem="5Tk-yf-YT9" secondAttribute="height" multiplier="0.738095" id="Z7g-7w-mAs"/>
+                        <constraint firstItem="efN-rR-gg7" firstAttribute="centerY" secondItem="UFA-95-D29" secondAttribute="centerY" id="bun-2L-DUr"/>
+                        <constraint firstItem="5Tk-yf-YT9" firstAttribute="centerY" secondItem="UKC-7T-JkC" secondAttribute="centerY" id="dgo-VL-Yah"/>
+                        <constraint firstItem="5Tk-yf-YT9" firstAttribute="leading" secondItem="TtQ-Te-Jrb" secondAttribute="leading" constant="24" id="gFx-OT-JWa"/>
+                        <constraint firstItem="UFA-95-D29" firstAttribute="centerY" secondItem="TtQ-Te-Jrb" secondAttribute="centerY" id="gvE-Yb-Mgt"/>
+                        <constraint firstAttribute="trailing" secondItem="UFA-95-D29" secondAttribute="trailing" constant="24" id="pXp-SE-2dY"/>
+                        <constraint firstItem="efN-rR-gg7" firstAttribute="leading" secondItem="UKC-7T-JkC" secondAttribute="trailing" constant="16" id="u95-bZ-3qb"/>
+                        <constraint firstItem="UKC-7T-JkC" firstAttribute="leading" secondItem="5Tk-yf-YT9" secondAttribute="trailing" constant="8" id="uT6-yJ-3Mq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TtQ-Te-Jrb" secondAttribute="trailing" id="BDh-py-qgZ"/>
+                <constraint firstItem="TtQ-Te-Jrb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KKG-1N-B5F"/>
+                <constraint firstItem="TtQ-Te-Jrb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sop-gu-163"/>
+                <constraint firstItem="TtQ-Te-Jrb" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="pAW-5g-4DO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.14503816793894" y="-253.87323943661974"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconCard" width="18" height="18"/>
+        <image name="iconCircle" width="8" height="8"/>
+        <image name="iconFavoriteOff" width="19" height="17"/>
+        <image name="iconUser" width="18" height="18"/>
+        <namedColor name="colorBlue">
+            <color red="0.0039215686274509803" green="0.0" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
